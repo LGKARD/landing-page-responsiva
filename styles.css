@@ -3,14 +3,15 @@ html {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    font-size: 16px;
 }
 h1 {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 800;
     margin: 0;
 }
 h2{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     margin: 0;
 }
@@ -26,9 +27,9 @@ button{
     background-color: #F84646;
     color: white;
     font-weight: 600;
-    font-size: 24px;
-    padding: 8px 24px;
-    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: .5rem;
     border: none;
     cursor: pointer;
 }
@@ -36,25 +37,35 @@ button{
 #presentation {
     top: calc(50% - 145px);
     position: relative;
-    width: 600px;
+    width: 37.5rem;
 }
 
 #presentation-container {
     border: 1px solid black;
-    padding: 40px 120px;
-    height: 600px;
+    padding: 2.5rem 7.5rem;
+    height: 100vh;
     background-image: url("./assets/Rectangle 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
-    padding: 160px 120px;
+    padding: 10rem 7.5rem;
     text-align: center;
 }
 .contact-title {
-    margin-top: 8px;
+    margin-top: .5rem;
 }
 .container p{
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 .container button {
-    margin-top: 32px;
+    margin-top: 2rem;
+    transition: opacity 0.5s ease-in-out, transform 0.2s .2s;
 }
+.container button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.background-gradient {
+    background: linear-gradient(180deg, #fff, #d9d9d9);
+} 
